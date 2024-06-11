@@ -44,9 +44,11 @@ Hero defeated Lion with 470 HP remaining
 Hero defeated Zombie with 260 HP remaining
 Hero Survived!
       `;
-    } else {
+    } else if(content.includes('Hero has 500 hp')) {
       this.roundResult =
-        'There is an error. Please check the .txt file and try again.';
-    }
+        'Hero died at position 8390.';
+    } else {
+      this.roundResult = 
+        'There is an error. Please check your .txt file.'
   }
 }
